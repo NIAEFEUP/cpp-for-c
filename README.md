@@ -9,7 +9,7 @@ students that are already familiar with programming in C.
 Copyright 2020 João Nuno Matos
 
 Unless otherwise stated in a file's header, all the source code files
-and code samples in the remainder of this work are made available to
-the general public under the MIT License. All remaining parts of the
-work are made available to the general public under a Creative Commons
-Attribution 4.0 International License.
+and code samples in the work are made available to the general public
+under the MIT License. All remaining parts of the work are made
+available to the general public under a Creative Commons Attribution
+4.0 International License.
