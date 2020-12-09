@@ -12,8 +12,10 @@ private:
     size_t capacity;
     T *data;
     static const size_t INITIAL_CAPACITY = 2;
+
 public:
-    Vector() {
+    Vector()
+    {
         _size = 0;
         capacity = INITIAL_CAPACITY;
         data = new T[INITIAL_CAPACITY];
@@ -34,9 +36,11 @@ public:
             return -1;
     }
 
-    void push_back(T n) {
-        if (_size == capacity) {
-            T *new_data = new T[capacity*2];
+    void push_back(T n)
+    {
+        if (_size == capacity)
+        {
+            T *new_data = new T[capacity * 2];
             std::copy_n(data, _size, new_data);
             capacity *= 2;
             delete[] data;
@@ -45,7 +49,8 @@ public:
         data[_size++] = n;
     }
 
-    ~Vector() {
+    ~Vector()
+    {
         delete[] data;
     }
 };

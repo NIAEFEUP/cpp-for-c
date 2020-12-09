@@ -79,7 +79,33 @@ int comp3 = s2.compare(s3); // 0 (equal)
 int comp2 = s3.compare(s1); // 1 (more than)
 ```
 
-# Some C++ Concepts
+# Object Oriented Programming
+
+A useful way we can organize our programs is thinking, for each concern,
+the data and the associated operations.
+
+An abstraction for this purpose is objects:
+ * Hide the data away
+ * Only comunicate through messages (function calls)
+ * (some other principles... but you can learn that later :D)
+
+Let's see how we can use C++ (and classes) to do this.
+
+## Example: vector (growing array of ints)
+
+Example #1 - in C
+
+ * See files c/vector.h c/main.c c/vector.c
+
+Example #2 - with C++ classes
+
+ * See files cpp/vector_class.h cpp/main.cpp
+
+Example #3 - using the standard library
+
+ * See file cpp/main2.cpp
+
+# Some (more) C++ Concepts
 
 ## Namespaces
 
@@ -106,32 +132,6 @@ We can now use both `lib1::graph` and `lib2::graph`.
 If we only use one library we can say `using namespace lib` and omit
 the specifier.
 
-## References
-
-TODO Elaborate
-
-# Object Oriented Programming
-
-A useful way we can organize our programs is thinking, for each concern,
-the data and the associated operations.
-
-An abstraction for this purpose is objects:
- * Hide the data away
- * Only comunicate through messages (function calls)
- * (some other principles... but you can learn that later :D)
-
-Let's see how we can use C++ (and classes) to do this.
-
-Example: vector (growing array of ints)
-
-[
-   * Show c/{vector.h/vector.c/main.c}
-   * Show cpp/{vector.h/main.cpp}
-   * Show cpp/main2.cpp
-]
-
-# Some (more) C++ Concepts
-
 ## RAII (Resource Aquisition is Initialization)
 
 C++ objects feature constructors (function run when we make the object)
@@ -141,17 +141,6 @@ Uses:
  * File objects can close the OS's file handle when we stop using them
  * We can make smart pointers and arrays that free their memory by
     themselves, and avoid both manually freeing memory and using a GC
-
-## Exceptions
-
-In every domain we need to account for errors or other abnormal states
-of execution. In C we mostly use the return code of a fuction to
-indicate errors, e.g., returning a null pointer if we could not create
-an object, or using 0 as OK and -1 as error.
-
-One other way C++ allows us to handle errors is to use exceptions.
-
-### TODO Elaborate
 
 ## Templates
 
@@ -170,7 +159,9 @@ Remember that we used the standard library vector? We declared
 templates (STL = Standard Template Library), and we wanted an
 `int` vector.
 
-[Show cpp/{vector_template.h,main_template.cpp}]
+# Example: vector using templates
+
+See files cpp/vector_template.h and main_template.cpp
 
 # The Standard Library - Overview
 ## Container Templates
@@ -185,7 +176,22 @@ No need to reinvent the standard data structures!
  * Search trees -> set and map
  * Hash tables -> unordered_set and unordered_map
 
-## <algorithm>
+# Challenge: shopping cart
+
+Let's build a shopping cart!
+
+# Even more concepts!
+## Exceptions
+
+In every domain we need to account for errors or other abnormal states
+of execution. In C we mostly use the return code of a fuction to
+indicate errors, e.g., returning a null pointer if we could not create
+an object, or using 0 as OK and -1 as error.
+
+One other way C++ allows us to handle errors is to use exceptions.
+
+## More stuff from the standard library
+### <algorithm>
 
 As long as you are using standard containers, many algorithms
 are already implemented!
@@ -197,7 +203,7 @@ are already implemented!
  * sort
  * many more!
 
-## A lot more!
+### A lot more!
 
  * chrono -> time related stuff
  * thread, mutex -> for multiprocessing

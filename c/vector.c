@@ -16,7 +16,7 @@ vector_t *vector_new()
     vector_t *vec = (vector_t *)malloc(sizeof(vector_t));
     vec->size = 0;
     vec->capacity = INITIAL_CAPACITY;
-    vec->data = (int *) alloc;
+    vec->data = (int *)alloc;
     return vec;
 }
 
@@ -27,7 +27,7 @@ size_t vector_size(vector_t *vec)
 
 int vector_get(vector_t *vec, size_t i, int *out)
 {
-    if (i >= vec->size)
+    if (i < 0 || i >= vec->size)
         return -1;
     *out = vec->data[i];
     return 0;
