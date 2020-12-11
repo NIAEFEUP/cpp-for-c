@@ -142,6 +142,25 @@ Uses:
  * We can make smart pointers and arrays that free their memory by
     themselves, and avoid both manually freeing memory and using a GC
 
+# The Standard Library - Overview
+## Container Templates
+
+No need to reinvent the standard data structures!
+
+ * Fixed-size array -> array
+ * Dynamic array -> vector
+ * Linked lists -> list and forward_list
+ * Queues -> stack, queue and deque
+ * Heap -> priority_queue
+ * Search trees -> set and map
+ * Hash tables -> unordered_set and unordered_map
+
+# Challenge: shopping cart
+
+Let's build a shopping cart!
+
+# Even more concepts!
+
 ## Templates
 
 Often we build structures and fuctions whose code is the same for any
@@ -163,24 +182,6 @@ templates (STL = Standard Template Library), and we wanted an
 
 See files cpp/vector_template.h and main_template.cpp
 
-# The Standard Library - Overview
-## Container Templates
-
-No need to reinvent the standard data structures!
-
- * Fixed-size array -> array
- * Dynamic array -> vector
- * Linked lists -> list and forward_list
- * Queues -> stack, queue and deque
- * Heap -> priority_queue
- * Search trees -> set and map
- * Hash tables -> unordered_set and unordered_map
-
-# Challenge: shopping cart
-
-Let's build a shopping cart!
-
-# Even more concepts!
 ## Exceptions
 
 In every domain we need to account for errors or other abnormal states
