@@ -6,7 +6,7 @@ build:
 	mkdir build
 
 build/vector-c:	build vector-c/main.c vector-c/vector.c vector-c/vector.h
-				gcc -o build/vector-c vector-c/main.c vector-c/vector.c
+	gcc -o build/vector-c vector-c/main.c vector-c/vector.c
 
 build/vector-cpp-class: build vector-cpp-class/main.cpp vector-cpp-class/vector.h \
 						vector-cpp-class/vector.cpp
