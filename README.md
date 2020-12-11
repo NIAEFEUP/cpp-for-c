@@ -9,7 +9,7 @@ Engineering students that are already familiar with programming in C.
 This repository also contains several code examples and a programming
 exercise. To build and run it, follow the following steps:
 
- 1. use the provided Makefile to build the example exercises
+ 1. use the provided Makefile to build the example exercises;
         you can build them all by simply running `make`
  2. run the program by running `build/${program-id}`, e.g.
         `build/vector-c`
