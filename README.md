@@ -1,8 +1,21 @@
 # C++ for C
 
-This repository aims to serve as a draft for a 3 hours workshop on C++
-aimed at CS/Informatics Engineering students and Computer Engineering
-students that are already familiar with programming in C.
+This repository aims to serve as the guide for a 3 hours workshop on
+C++ aimed at CS/Informatics Engineering students and Computer
+Engineering students that are already familiar with programming in C.
+
+-----------------------------------------------------------------------
+
+This repository also contains several code examples and a programming
+exercise. To build and run it, follow the following steps:
+
+ 1. use the provided Makefile to build the example exercises
+        you can build them all by simply running `make`
+ 2. run the program by running `build/${program-id}`, e.g.
+        `build/vector-c`
+
+To build a specific example or exercise, run `make build/${program-id}`
+and to clean up, run `make clean` or delete the _build_ directory.
 
 -----------------------------------------------------------------------
 
