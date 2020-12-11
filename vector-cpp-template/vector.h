@@ -1,8 +1,6 @@
 #pragma once
-#include <cstddef>
-#include <cstdlib>
-#include <optional>
 #include <algorithm>
+#include <cstddef>
 
 template <class T>
 class Vector

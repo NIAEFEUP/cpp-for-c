@@ -1,4 +1,5 @@
-#include "vector_class.h"
+#include "vector.h"
+#include <algorithm>
 
 Vector::Vector()
 {

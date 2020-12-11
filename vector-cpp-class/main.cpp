@@ -1,5 +1,5 @@
 #include <iostream>
-#include "vector_class.h"
+#include "vector.h"
 
 int main(void)
 {

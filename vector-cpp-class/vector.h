@@ -1,8 +1,5 @@
 #pragma once
 #include <cstddef>
-#include <cstdlib>
-#include <optional>
-#include <algorithm>
 
 class Vector
 {
