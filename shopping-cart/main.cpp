@@ -79,26 +79,23 @@ void list_products()
     }
     cout << "\n";
 }
+
 void list_cart_items(const ShoppingCart &cart)
 {
     cout << "Items in your cart:\n";
     vector<pair<string, int>> items = cart.get_items();
-    for (auto listing : items)
-    {
-        cout << "\t" << get<0>(listing) << ": " << get<1>(listing) << " units\n";
-    }
-    cout << "\n";
+    // TODO: complete the function to print the item listing
+    // HINT: check documentation for std::vector and std::pair
+    // HINT: check the list_products function
 }
 
 void add_item(ShoppingCart &cart)
 {
-    cout << "Which item should we add to your cart? ";
     string item;
-    cin >> item;
+    int quantity;
 
-    cout << "How many units do you want to buy? ";
-    int quantity = 0;
-    cin >> quantity;
+    // TODO: deal with user input of the item and quantity
+    // HINT: use std::cin and std::cout
 
     cart.add_item(item, quantity);
     cout << "Item added successfully\n\n";
@@ -106,9 +103,9 @@ void add_item(ShoppingCart &cart)
 
 void remove_item(ShoppingCart &cart)
 {
-    cout << "Which item should we remove from your cart? ";
     string item;
-    cin >> item;
+
+    // TODO: user input
 
     cart.delete_item(item);
     cout << "Item removed successfully\n\n";
@@ -116,13 +113,10 @@ void remove_item(ShoppingCart &cart)
 
 void update_item_quantity(ShoppingCart &cart)
 {
-    cout << "Which item should we update in your cart? ";
     string item;
-    cin >> item;
+    int quantity;
 
-    cout << "How many units do you want to buy? ";
-    int quantity = 0;
-    cin >> quantity;
+    // TODO: user input
 
     cart.update_item(item, quantity);
     cout << "Item updated successfully\n\n";
@@ -130,12 +124,13 @@ void update_item_quantity(ShoppingCart &cart)
 
 void total_price(const ShoppingCart &cart)
 {
+    vector<pair<string, int>> cart_items = cart.get_items();
     int total = 0;
-    for (auto item : cart.get_items())
-    {
-        int price = prices[get<0>(item)];
-        total += get<1>(item) * price;
-    }
+
+    // TODO: calculate the total price for the cart's items
+    // HINT: use the prices hashtable
+    // HINT: check the input for std::unordered_map, std::pair, std::vector
+
     cout << "In total, the items in your cart are worth €" << total << ".\n\n";
 }
 
