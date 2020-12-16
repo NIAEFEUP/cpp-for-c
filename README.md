@@ -21,8 +21,8 @@ and to clean up, run `make clean` or delete the _build_ directory.
 
 Copyright 2020 João Nuno Matos: All Rights Reserved
 
-Unless otherwise stated in a file's heading, all the source code files
-and code samples in the work are made available to the general public
-under the MIT License. All remaining parts of the work are made
-available to the general public under a Creative Commons Attribution
-4.0 International License.
+As an authorized licensee, and unless otherwise stated in a file's
+heading, all the source code files and code samples in the work are
+made available by NIAEFEUP to the general public under the MIT License.
+All remaining parts of the work are made available to the general
+public under a Creative Commons Attribution 4.0 International License.
